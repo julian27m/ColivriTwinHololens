@@ -39,12 +39,12 @@ public class ServerDataFetcher : MonoBehaviour
                     ComputerDynamicData computerData = JsonUtility.FromJson<ComputerDynamicData>(jsonData);
 
                     // Update your TextMeshPro objects with the parsed data
-                    cpuTextMesh.text = "CPU Usage: " + computerData.CPUUsage;
-                    Debug.Log("CPU Usage: " + computerData.CPUUsage);
-                    ramTextMesh.text = "RAM Usage: " + computerData.RAMUsage;
-                    Debug.Log("RAM Usage: " + computerData.RAMUsage);
-                    diskTextMesh.text = "Disk Usage: " + computerData.DiskUsage;
-                    Debug.Log("Disk Usage: " + computerData.DiskUsage);
+                    cpuTextMesh.text = "Uso actual: " + computerData.CPUUsage;
+                    //Debug.Log("Uso actual CPU: " + computerData.CPUUsage);
+                    ramTextMesh.text = "Uso actual: " + computerData.RAMUsage;
+                    //Debug.Log("Uso actual RAM: " + computerData.RAMUsage);
+                    diskTextMesh.text = "Uso actual: " + computerData.DiskUsage;
+                    //Debug.Log("Uso actual dsico: " + computerData.DiskUsage);
                 }
                 else
                 {

@@ -39,9 +39,9 @@ public class SlateUpdater : MonoBehaviour
             var proyectoCargo = computerData.ProyectoCargo;
             var asignacion = computerData.Asignacion;
             var tarjetaGrafica = computerData.TarjetaGrafica;
-            var memoria = computerData.Memoria;
-            var almacenamiento = computerData.Almacenamiento;
-            var procesador = computerData.Procesador;
+            var memoria = "Memoria total: " + computerData.Memoria;
+            var almacenamiento = "Almacenamiento total: " + computerData.Almacenamiento;
+            var procesador = "Procesador: " + computerData.Procesador;
             var monitor = computerData.Monitor;
             var teclado = computerData.Teclado;
             var mouse = computerData.Mouse;
@@ -77,16 +77,16 @@ public class SlateUpdater : MonoBehaviour
         {
             // Handle the case where no data is available (e.g., show an error message)
             proyectoText.text = "No Data Available";
-            asignacionText.text = "No Data Available"; 
-            tarjetaGraficaText.text = "No Data Available"; 
+            asignacionText.text = "No Data Available";
+            tarjetaGraficaText.text = "No Data Available";
             memoriaText.text = "No Data Available";
-            almacenamientoText.text = "No Data Available"; 
-            procesadorText.text = "No Data Available"; 
+            almacenamientoText.text = "No Data Available";
+            procesadorText.text = "No Data Available";
             monitorText.text = "No Data Available";
             tecladoText.text = "No Data Available";
-            mouseText.text = "No Data Available"; 
-            soText.text = "No Data Available"; 
-            swRelevanteText.text = "No Data Available"; 
+            mouseText.text = "No Data Available";
+            soText.text = "No Data Available";
+            swRelevanteText.text = "No Data Available";
             mantenimientoText.text = "No Data Available";
         }
     }
