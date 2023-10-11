@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class ButtonClickHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject currentButton;
+    public GameObject newButton;
+    public void change()
     {
-        
+        if (currentButton != null)
+        {
+            currentButton.SetActive(false);
+            newButton.SetActive(true);
+        }
+        else
+        {
+            //Debug.Log("Button: " + "No lo reconoce");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void back()
     {
-        
+        if (newButton != null)
+        {
+            newButton.SetActive(false);
+            currentButton.SetActive(true);
+
+        }
+        else
+        {
+            //Debug.Log("ButtonBack: " + "No lo reconoce");
+        }
     }
 }

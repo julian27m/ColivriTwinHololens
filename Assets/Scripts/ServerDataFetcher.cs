@@ -18,6 +18,10 @@ public class ServerDataFetcher : MonoBehaviour
     public TextMeshPro ramTextMesh; // Reference to your TextMeshPro object for RAM
     public TextMeshPro diskTextMesh; // Reference to your TextMeshPro object for Disk
 
+    public TextMeshPro cpuTextMesh2; // Reference to your TextMeshPro object for CPU
+    public TextMeshPro ramTextMesh2; // Reference to your TextMeshPro object for RAM
+    public TextMeshPro diskTextMesh2; // Reference to your TextMeshPro object for Disk
+
     void Start()
     {
         StartCoroutine(FetchData());
@@ -44,6 +48,14 @@ public class ServerDataFetcher : MonoBehaviour
                     ramTextMesh.text = "Uso actual: " + computerData.RAMUsage;
                     //Debug.Log("Uso actual RAM: " + computerData.RAMUsage);
                     diskTextMesh.text = "Uso actual: " + computerData.DiskUsage;
+                    //Debug.Log("Uso actual dsico: " + computerData.DiskUsage);
+
+                    // Update your TextMeshPro objects with the parsed data
+                    cpuTextMesh2.text = "Uso actual: " + computerData.CPUUsage;
+                    //Debug.Log("Uso actual CPU: " + computerData.CPUUsage);
+                    ramTextMesh2.text = "Uso actual: " + computerData.RAMUsage;
+                    //Debug.Log("Uso actual RAM: " + computerData.RAMUsage);
+                    diskTextMesh2.text = "Uso actual: " + computerData.DiskUsage;
                     //Debug.Log("Uso actual dsico: " + computerData.DiskUsage);
                 }
                 else

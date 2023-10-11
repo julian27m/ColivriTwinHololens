@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class HideShow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void show(GameObject obj)
+    public GameObject currentSlate;
+    public void show()
     {
-        obj.SetActive(true);
+        if (currentSlate != null)
+        {
+            //Debug.Log("Gaze: " + gazeSlate);
+            currentSlate.SetActive(true);
+        }
+        else
+        {
+            //Debug.Log("Show: " + "No lo reconoce");
+        }
     }
 
-    public void hide(GameObject obj)
+    public void hide()
     {
-        obj.SetActive(false);
+        if (currentSlate != null)
+        {
+            currentSlate.SetActive(false);
+        }
+
+
     }
 }
